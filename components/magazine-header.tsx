@@ -5,7 +5,7 @@ import { Search, Menu } from 'lucide-react'
 export default function MagazineHeader() {
   return (
     <header className="border-b border-[#945139]/20 bg-[#faf8f5]">
-      <div className="mx-auto flex items-center justify-between px-6 py-4 md:px-12">
+      <div className="mx-auto flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 md:px-12">
         {/* Left - Logo */}
         <Link href="/" className="flex items-center">
           <Image 
@@ -13,7 +13,7 @@ export default function MagazineHeader() {
             alt="ikai Asai" 
             width={120} 
             height={40}
-            className="h-10 w-auto"
+            className="h-8 w-auto sm:h-10"
             priority
           />
         </Link>
@@ -21,16 +21,16 @@ export default function MagazineHeader() {
         {/* Center navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <Link 
-            href="/crafts" 
+            href="/" 
             className="font-nunito text-sm font-light tracking-wide text-[#3d2021] transition-opacity hover:opacity-60"
           >
-            Crafts
+            Home
           </Link>
           <Link 
-            href="/collections" 
+            href="/about" 
             className="font-nunito text-sm font-light tracking-wide text-[#3d2021] transition-opacity hover:opacity-60"
           >
-            Collections
+            About
           </Link>
           <Link 
             href="/blog" 
@@ -40,25 +40,19 @@ export default function MagazineHeader() {
           </Link>
         </nav>
 
-        {/* Right - Shop button and menu */}
-        <div className="flex items-center gap-6">
+        {/* Right - Menu icons */}
+        <div className="flex items-center gap-3 sm:gap-4">
           <Link 
-            href="/shop" 
-            className="border border-[#945139] bg-[#945139] px-6 py-2 font-nunito text-sm font-light tracking-wide text-white transition-colors hover:bg-[#7f252c]"
+            href="/blog" 
+            className="md:hidden font-nunito text-xs font-light text-[#3d2021] transition-opacity hover:opacity-60"
           >
-            Shop
+            Stories
           </Link>
-          <button 
-            aria-label="Search"
-            className="text-[#3d2021] transition-opacity hover:opacity-60"
-          >
-            <Search className="h-5 w-5" strokeWidth={1.5} />
-          </button>
           <button 
             aria-label="Menu"
             className="text-[#3d2021] transition-opacity hover:opacity-60"
           >
-            <Menu className="h-5 w-5" strokeWidth={1.5} />
+            <Menu className="h-5 w-5 sm:h-6 sm:w-6" strokeWidth={1.5} />
           </button>
         </div>
       </div>

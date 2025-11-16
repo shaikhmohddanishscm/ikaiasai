@@ -27,20 +27,20 @@ export default function Page() {
     <div className="min-h-screen bg-white">
       <MagazineHeader />
       
-      <div className="flex min-h-[calc(100vh-73px)]">
-        {/* Left side - Hero section */}
-        <div className="relative w-full lg:w-1/2 bg-[#945139]">
+      <div className="flex flex-col lg:flex-row">
+        {/* Left side - Hero section (Sticky) */}
+        <div className="relative w-full lg:w-1/2 bg-[#945139] min-h-[50vh] lg:sticky lg:top-0 lg:h-screen">
           <div className="absolute inset-0 bg-linear-to-br from-[#945139] via-[#ef9f59] to-[#7f252c] opacity-90"></div>
           
           {/* Text overlay on hero */}
-          <div className="relative z-10 flex h-full flex-col justify-center px-12 lg:px-20">
-            <p className="font-nunito text-xs font-medium uppercase tracking-[0.3em] text-[#faf8f5]/80">
+          <div className="relative z-10 flex h-full flex-col justify-center px-6 py-12 sm:px-12 lg:px-20">
+            <p className="font-nunito text-[10px] sm:text-xs font-medium uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#faf8f5]/80">
               Handcrafted Heritage
             </p>
-            <h1 className="mt-6 font-nunito text-5xl font-bold leading-tight tracking-tight text-[#faf8f5] lg:text-7xl">
+            <h1 className="mt-4 sm:mt-6 font-nunito text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight tracking-tight text-[#faf8f5]">
               ikai Asai
             </h1>
-            <p className="mt-8 font-nunito-sans text-lg font-light italic leading-relaxed text-[#faf8f5] max-w-md">
+            <p className="mt-6 sm:mt-8 font-nunito-sans text-base sm:text-lg font-light italic leading-relaxed text-[#faf8f5] max-w-md">
               Discover the artistry of centuries-old Indian crafts, reimagined for contemporary living. Each piece tells a story of tradition, heritage, and masterful craftsmanship.
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function Page() {
 
         {/* Right side - Articles grid */}
         <div className="w-full bg-[#faf8f5] lg:w-1/2 overflow-y-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2">
             {articles.map((article, index) => (
               <Link
                 key={index}
@@ -62,7 +62,7 @@ export default function Page() {
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   <p className="font-nunito text-[10px] font-medium uppercase tracking-widest text-[#945139]">
                     {article.category}
                   </p>
@@ -82,13 +82,13 @@ export default function Page() {
         </div>
       </div>
 
-      <section className="bg-[#faf8f5] py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="mb-16 text-center font-nunito text-xs font-bold uppercase tracking-[0.3em] text-[#3d2021]">
+      <section className="bg-[#faf8f5] py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="mb-8 sm:mb-12 lg:mb-16 text-center font-nunito text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#3d2021]">
             Featured Collections
           </h2>
           
-          <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mb-8 sm:mb-12 grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:grid-cols-4">
             <div className="group cursor-pointer">
               <div className="aspect-square overflow-hidden rounded-sm bg-white shadow-md">
                 <div className="flex h-full items-center justify-center bg-[#945139]/10 transition-all group-hover:bg-[#945139]/20">
@@ -142,17 +142,17 @@ export default function Page() {
       <div className="border-t border-[#945139]/20"></div>
 
       {/* Kansa Craft Feature */}
-      <section className="relative min-h-screen bg-[#3d2021]">
+      <section className="relative min-h-[70vh] sm:min-h-screen bg-[#3d2021]">
         <div className="absolute inset-0 bg-linear-to-br from-[#3d2021] via-[#7f252c] to-[#3d2021] opacity-95"></div>
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 min-h-screen">
-          <div className="flex flex-col justify-center px-12 py-20 lg:px-20">
-            <p className="font-nunito text-xs font-medium uppercase tracking-widest text-[#ef9f59]">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] sm:min-h-screen">
+          <div className="flex flex-col justify-center px-6 py-12 sm:px-12 sm:py-20 lg:px-20">
+            <p className="font-nunito text-[10px] sm:text-xs font-medium uppercase tracking-[0.2em] sm:tracking-widest text-[#ef9f59]">
               ANCIENT CRAFT
             </p>
-            <h2 className="mt-8 font-nunito text-7xl font-bold leading-[0.95] tracking-tight text-[#faf8f5] lg:text-8xl">
+            <h2 className="mt-6 sm:mt-8 font-nunito text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] tracking-tight text-[#faf8f5]">
               KANSA<br />METAL
             </h2>
-            <p className="mt-16 font-nunito-sans text-lg italic leading-relaxed text-[#faf8f5]/90">
+            <p className="mt-8 sm:mt-12 lg:mt-16 font-nunito-sans text-base sm:text-lg italic leading-relaxed text-[#faf8f5]/90">
               Originating from the times of Mahabharata, Kansa is considered the healing metal of Ayurveda. Crafted from 78% copper and 22% tin, our Kansari Karigars use only handmade tools to create alluring patterns on what is known to be the hardest metal to work on.
             </p>
           </div>
@@ -172,7 +172,7 @@ export default function Page() {
 
       {/* Terracotta Craft Feature */}
       <section className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative h-[70vh] lg:h-auto bg-[#ef9f59]/10 flex items-center justify-center">
+        <div className="relative h-[50vh] sm:h-[60vh] lg:h-auto bg-[#ef9f59]/10 flex items-center justify-center">
           <div className="text-center p-12">
             <div className="text-8xl text-[#945139] mb-8">❋</div>
             <p className="font-nunito text-sm uppercase tracking-[0.3em] text-[#3d2021]/70">
@@ -183,23 +183,23 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center px-12 py-20 lg:px-20 bg-[#faf8f5]">
-          <p className="font-nunito text-xs font-medium uppercase tracking-widest text-[#945139]">
+        <div className="flex flex-col justify-center px-6 py-12 sm:px-12 sm:py-20 lg:px-20 bg-[#faf8f5]">
+          <p className="font-nunito text-[10px] sm:text-xs font-medium uppercase tracking-[0.2em] sm:tracking-widest text-[#945139]">
             TRADITIONAL ART
           </p>
-          <h2 className="mt-8 font-nunito text-7xl font-bold leading-[0.95] tracking-tight text-[#3d2021] lg:text-8xl">
+          <h2 className="mt-6 sm:mt-8 font-nunito text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] tracking-tight text-[#3d2021]">
             TERRA<br />COTTA
           </h2>
-          <p className="mt-16 font-nunito-sans text-lg italic leading-relaxed text-[#3d2021]/80">
+          <p className="mt-8 sm:mt-12 lg:mt-16 font-nunito-sans text-base sm:text-lg italic leading-relaxed text-[#3d2021]/80">
             Our fine terracotta is handcrafted by gifted craftsmen descending from a lineage of traditional kalakars. Using ancestral knowledge, they channel the creative energy of nature's elements to create pieces that cut through the fabric of time and civilization.
           </p>
         </div>
       </section>
 
       {/* Craft Heritage Article */}
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-6">
-          <div className="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="mb-8 sm:mb-12 grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
             <div className="aspect-4/3 overflow-hidden rounded-sm bg-[#945139]/5 flex items-center justify-center">
               <div className="text-center p-8">
                 <p className="font-nunito text-6xl font-bold text-[#945139]">5000+</p>
@@ -235,12 +235,12 @@ export default function Page() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="border-t border-[#945139]/20 bg-[#945139] py-20">
-        <div className="container mx-auto max-w-2xl px-6">
-          <h2 className="mb-4 text-center font-nunito text-3xl font-bold text-[#faf8f5]">
+      <section className="border-t border-[#945139]/20 bg-[#945139] py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto max-w-2xl px-4 sm:px-6">
+          <h2 className="mb-4 text-center font-nunito text-2xl sm:text-3xl font-bold text-[#faf8f5]">
             Join Our Community
           </h2>
-          <p className="mb-12 text-center font-nunito-sans text-base italic text-[#faf8f5]/80">
+          <p className="mb-8 sm:mb-12 text-center font-nunito-sans text-sm sm:text-base italic text-[#faf8f5]/80">
             Discover stories of craft, heritage, and timeless design
           </p>
           
@@ -274,13 +274,13 @@ export default function Page() {
       </section>
 
       {/* Crafts Showcase Section */}
-      <section className="border-t border-[#945139]/20 bg-[#faf8f5] py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="mb-16 text-center font-nunito text-xs font-bold uppercase tracking-[0.3em] text-[#3d2021]">
+      <section className="border-t border-[#945139]/20 bg-[#faf8f5] py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="mb-8 sm:mb-12 lg:mb-16 text-center font-nunito text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#3d2021]">
             Our Craft Stories
           </h2>
           
-          <div className="grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:gap-x-8 sm:gap-y-12 md:grid-cols-2 lg:grid-cols-3">
             {/* Kansa Craft */}
             <article className="group cursor-pointer">
               <div className="mb-6 aspect-3/4 overflow-hidden rounded-sm bg-[#945139]/5">

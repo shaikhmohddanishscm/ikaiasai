@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/logos/IA-logo.png',
+        url: '/favicon.png',
         type: 'image/png',
       },
     ],

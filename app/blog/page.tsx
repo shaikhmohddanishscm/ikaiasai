@@ -22,14 +22,14 @@ export default function BlogListPage() {
       <MagazineHeader />
       
       {/* Hero Section */}
-      <section className="bg-[#945139] py-20 lg:py-32">
-        <div className="container mx-auto px-6 lg:px-12">
+      <section className="bg-[#945139] py-12 sm:py-16 lg:py-20 xl:py-32">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-nunito text-5xl font-bold leading-tight tracking-tight text-[#faf8f5] lg:text-7xl">
+            <h1 className="font-nunito text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight text-[#faf8f5]">
               Stories & Insights
             </h1>
             
-            <p className="mt-8 font-nunito-sans text-lg italic leading-relaxed text-[#faf8f5]/80">
+            <p className="mt-6 sm:mt-8 font-nunito-sans text-base sm:text-lg italic leading-relaxed text-[#faf8f5]/80">
               Discover the artistry of centuries-old Indian crafts, care guides, and inspiration for your home
             </p>
           </div>
@@ -37,8 +37,8 @@ export default function BlogListPage() {
       </section>
 
       {/* Blog Grid */}
-      <section className="container mx-auto px-6 py-20 lg:px-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-12">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {blogsData.map((blog) => {
             const slug = createSlug(blog.title)
             
@@ -56,7 +56,7 @@ export default function BlogListPage() {
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="p-6">
+                  <div className="p-4 sm:p-6">
                     <div className="flex items-center gap-2 text-xs">
                       <span className="font-nunito font-medium uppercase tracking-widest text-[#945139]">
                         Craft & Lifestyle
@@ -67,7 +67,7 @@ export default function BlogListPage() {
                       </span>
                     </div>
                     
-                    <h2 className="mt-3 font-nunito text-xl font-bold text-[#3d2021] group-hover:text-[#945139] transition-colors">
+                    <h2 className="mt-3 font-nunito text-lg sm:text-xl font-bold text-[#3d2021] group-hover:text-[#945139] transition-colors">
                       {blog.title}
                     </h2>
                     
@@ -90,12 +90,12 @@ export default function BlogListPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="border-t border-[#945139]/20 bg-[#3d2021] py-20">
-        <div className="container mx-auto max-w-2xl px-6">
-          <h2 className="mb-4 text-center font-nunito text-3xl font-bold text-[#faf8f5]">
+      <section className="border-t border-[#945139]/20 bg-[#3d2021] py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto max-w-2xl px-4 sm:px-6">
+          <h2 className="mb-4 text-center font-nunito text-2xl sm:text-3xl font-bold text-[#faf8f5]">
             Stay Inspired
           </h2>
-          <p className="mb-12 text-center font-nunito-sans text-base italic text-[#faf8f5]/80">
+          <p className="mb-8 sm:mb-12 text-center font-nunito-sans text-sm sm:text-base italic text-[#faf8f5]/80">
             Get stories of craft, care tips, and new collections delivered to your inbox
           </p>
           

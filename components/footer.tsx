@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#945139]/20 bg-[#3d2021] py-12">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 gap-8 pb-8 md:grid-cols-3">
+    <footer className="border-t border-[#945139]/20 bg-[#3d2021] py-8 sm:py-10 lg:py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 pb-6 sm:pb-8 md:grid-cols-3">
           {/* Left - Brand */}
           <div>
             <h3 className="font-nunito text-2xl font-bold text-[#faf8f5]">ikai Asai</h3>
@@ -19,6 +19,9 @@ export default function Footer() {
             <div className="space-y-2">
               <Link href="/" className="block font-nunito text-sm text-[#faf8f5]/80 transition-colors hover:text-[#ef9f59]">
                 Home
+              </Link>
+              <Link href="/about" className="block font-nunito text-sm text-[#faf8f5]/80 transition-colors hover:text-[#ef9f59]">
+                About
               </Link>
               <Link href="/blog" className="block font-nunito text-sm text-[#faf8f5]/80 transition-colors hover:text-[#ef9f59]">
                 Stories & Blog
