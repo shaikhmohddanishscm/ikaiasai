@@ -38,6 +38,12 @@ export default function MagazineHeader() {
           >
             Stories
           </Link>
+          <Link 
+            href="/blog" 
+            className="font-nunito text-sm font-light tracking-wide text-[#3d2021] transition-opacity hover:opacity-60"
+          >
+            Design
+          </Link>
         </nav>
 
         {/* Right - Menu icons */}

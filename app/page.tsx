@@ -38,7 +38,7 @@ export default function Page() {
               Handcrafted Heritage
             </p>
             <h1 className="mt-4 sm:mt-6 font-nunito text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight tracking-tight text-[#faf8f5]">
-              ikai Asai
+              IKAI ASAI
             </h1>
             <p className="mt-6 sm:mt-8 font-nunito-sans text-base sm:text-lg font-light italic leading-relaxed text-[#faf8f5] max-w-md">
               Discover the artistry of centuries-old Indian crafts, reimagined for contemporary living. Each piece tells a story of tradition, heritage, and masterful craftsmanship.
@@ -85,7 +85,7 @@ export default function Page() {
       <section className="bg-[#faf8f5] py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="mb-8 sm:mb-12 lg:mb-16 text-center font-nunito text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#3d2021]">
-            Featured Collections
+            Editor's Pick
           </h2>
           
           <div className="mb-8 sm:mb-12 grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:grid-cols-4">
@@ -147,7 +147,7 @@ export default function Page() {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] sm:min-h-screen">
           <div className="flex flex-col justify-center px-6 py-12 sm:px-12 sm:py-20 lg:px-20">
             <p className="font-nunito text-[10px] sm:text-xs font-medium uppercase tracking-[0.2em] sm:tracking-widest text-[#ef9f59]">
-              ANCIENT CRAFT
+              CRAFT CARD
             </p>
             <h2 className="mt-6 sm:mt-8 font-nunito text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] tracking-tight text-[#faf8f5]">
               KANSA<br />METAL
@@ -170,7 +170,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Terracotta Craft Feature */}
+      {/* Terracotta Craft Feature
       <section className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative h-[50vh] sm:h-[60vh] lg:h-auto bg-[#ef9f59]/10 flex items-center justify-center">
           <div className="text-center p-12">
@@ -194,12 +194,12 @@ export default function Page() {
             Our fine terracotta is handcrafted by gifted craftsmen descending from a lineage of traditional kalakars. Using ancestral knowledge, they channel the creative energy of nature's elements to create pieces that cut through the fabric of time and civilization.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Craft Heritage Article */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="mb-8 sm:mb-12 grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+          {/* <div className="mb-8 sm:mb-12 grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
             <div className="aspect-4/3 overflow-hidden rounded-sm bg-[#945139]/5 flex items-center justify-center">
               <div className="text-center p-8">
                 <p className="font-nunito text-6xl font-bold text-[#945139]">5000+</p>
@@ -218,7 +218,7 @@ export default function Page() {
                 <p className="mt-4 font-nunito-sans text-sm italic text-[#3d2021]">Ancient Crafts</p>
               </div>
             </div>
-          </div>
+          </div> */}
           
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 font-nunito text-xs font-medium uppercase tracking-widest text-[#945139]">
